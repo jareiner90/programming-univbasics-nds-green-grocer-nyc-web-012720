@@ -72,8 +72,8 @@ def apply_clearance(cart)
     working_item = find_item_by_name_in_collection(name, cart)
 
     if working_item[:clearance] == true
-      price_change = cart[i][:price] * 0.80.round(2)
-      cart[i][:price] = price_change
+      price_change = cart[i][:price] * 0.80
+      cart[i][:price] = price_change.round(2)
     end
     i += 1
   end
