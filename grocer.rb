@@ -89,7 +89,7 @@ def checkout(cart, coupons)
 
   while i < final_cart.length do
     price_per_item = final_cart[i][:price] * final_cart[i][:count]
-    grand_total += price_per_item 
+    grand_total += price_per_item
     i += 1
   end
   grand_total
