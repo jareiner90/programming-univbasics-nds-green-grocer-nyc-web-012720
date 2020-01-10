@@ -76,10 +76,20 @@ def apply_clearance(cart)
     end
     i += 1
   end
-  pp cart
+  cart
 end
 
 def checkout(cart, coupons)
   new_cart = consolidate_cart(cart)
+  apply_coupons(new_cart, coupons)
+  final_cart = apply_clearance(new_cart)
+
+  grand_total = 0
+  i = 0
+
+  while i < final_cart.length do
+
+    i += 1
+  end
 
 end
