@@ -74,8 +74,6 @@ def apply_clearance(cart)
     if working_item[:clearance] == true
       price_change = cart[i][:price] * 0.80.round(2)
       cart[i][:price] = price_change
-
-      # cart[i][:price] *= 0.80.round(2)
     end
     i += 1
   end
