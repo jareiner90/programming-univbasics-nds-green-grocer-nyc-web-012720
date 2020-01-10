@@ -36,22 +36,7 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  cart_with_coupons = []
-  cart_i = 0
-  while cart_i < cart.length do
-    coupon_i = 0
-    working_item = cart[cart_i][:item]
-    while coupon_i < coupons.length do
-      working_coupon = coupons[coupon_i][:item]
-      if working_coupon == working_item
-        cart_with_coupons << coupons[coupon_i]
-      else
-        cart_with_coupons << cart[cart_i]
-      coupon_i += 1
-    end
-    cart_i += 1
-  end
-  pp cart_with_coupons
+  
 end
 
 def apply_clearance(cart)
